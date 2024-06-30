@@ -1,8 +1,8 @@
 # Introduction to dynamic programming.
 > Dynamic Programming is an optimization over plain recursion. The idea is to reuse the solution of sub problems when there are overlapping sub problems.
 ## There are two ways to perform DP.
-> **Memoization (Top Down).** <br>
-> **Tabulation (Bottom up).**
+> **1. Memoization (Top Down).** <br>
+> **2. Tabulation (Bottom up).**
 ## Applications of DP.
 > **Bellman Ford Algorithm:** This algorithm is to find shortest path from a source to all the destination. This algorithm is used in routing. <br>
 > **Floyd warshall algorithm:** To find the shortest path between every pair of vertices in a graph.
