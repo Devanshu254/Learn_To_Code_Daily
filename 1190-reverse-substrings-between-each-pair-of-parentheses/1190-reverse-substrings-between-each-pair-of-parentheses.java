@@ -4,16 +4,13 @@ class Solution {
         StringBuilder res = new StringBuilder();
         for(int i=0;i<s.length();i++) {
             char ch = s.charAt(i);
-            // Opening bracket.
             if(ch == '(' || ch != ')') {
                 stack.push(ch);
             }else {
-                // Closing bracket.
                 ArrayList<Character> list = new ArrayList<>();
-                while(!stack.isEmpty() && stack.peek() != '(') {
+                while(stack.peek() != '(' && !stack.isEmpty()) {
                     list.add(stack.pop());
                 }
-                // Remove the opening bracket.
                 stack.pop();
                 for(char c: list) {
                     stack.push(c);
@@ -21,7 +18,7 @@ class Solution {
             }
         }
         while(!stack.isEmpty()) {
-            res.insert(0,stack.pop());
+            res.insert(0, stack.pop());
         }
         return res.toString();
     }
