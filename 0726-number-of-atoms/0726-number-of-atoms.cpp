@@ -1,5 +1,7 @@
 class Solution {
 public:
+    // Space: O(N).
+    // TC: O(N^2).
     string countOfAtoms(string formula) {
         int n = formula.length();
         
